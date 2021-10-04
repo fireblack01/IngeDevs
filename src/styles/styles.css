@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0px;
 }
@@ -114,3 +115,9 @@ ul {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
+=======
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 4d724fb4533b8e5234afa14e3ee25e2409812ebd
