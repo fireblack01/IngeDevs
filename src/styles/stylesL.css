@@ -1,7 +1,31 @@
-.contenedor-logo{
+/*Acontinuación estan los estilos para todos los formularios de las páginas*/
+form{
     display: flex;
-    flex-direction: center;
-}
-.imagen-logo{
-    width: 150px;
-}
+    flex-direction: column;
+    justify-content: center;
+  }
+  input, select{
+    color: #212121;
+    border: 1px solid #212121;
+    border-radius: 0;
+    padding: 12px 16px;
+    min-height: 51px;
+    margin-bottom: 20px;
+    max-width: 22vw;
+  }
+  label{
+    max-width: 22vw;
+  }
+  input:focus, select:focus{
+    color: #111;
+    outline: none;
+    -webkit-box-shadow: 0 0 0 1px;
+    box-shadow: 0 0 0 1px;
+  }
+  /* clase para etiqueta padre del form*/
+  .flex-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
