@@ -9,8 +9,8 @@ import MaestroProducto from 'pages/maestroProducto';
 import RegistrarVenta from 'pages/registrarventa';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css';
+import 'styles/stylesL.css';
 import 'styles/stylesM.css';
-
 
 function App() {
   return (

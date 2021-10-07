@@ -19,7 +19,7 @@ const Header = () => {
                                 <Link to="/actualizarusuario">Usuarios</Link>
                               </li>
                               <li>
-                                <Link to="/maestrousuario">Administrador de usuarios</Link>
+                                <Link to="/maestroUsuario">Administrador de usuarios</Link>
                               </li>
                           </ul>
                       </nav>

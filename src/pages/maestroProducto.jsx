@@ -2,21 +2,28 @@ import { Link } from 'react-router-dom';
 
 const MaestroProducto = () => {
   return(
-    <div className="content">
-      <div className="container mw-60 pd-tb-30">    
-        <h2>Administración de productos</h2>
-
-        <label for="buscar">Buscar Por: </label>
-        <select name="buscar" id="buscar">
-          <option value="Codigo">Código</option>
-          <option value="Descripcion">Descripción</option>
-        </select>
-        <input type="text" placeholder="Digite el Valor..." id="buscar" name="buscar"/>
-        <button classname="button" id="botonBuscar">Buscar</button>
-        
-        <br></br><br></br>
+    <div>
+            <div >
+                
+                <h2>Administración de productos</h2>
+                <div className="PosButtonN">
+                <Link to="registrarProducto"><button className="button" >Nuevo Producto</button></Link>
+                </div>    
+                
+                <div className="posBuscar">
+                  <label align="right" for="buscar">Buscar Por: </label>
+                  <select className="inputProd"name="buscar" id="buscar">
+                    <option value="Codigo">Código</option>
+                    <option value="Descripcion">Descripción</option>
+                  </select>
+                  <input className="inputProd"type="text" placeholder="Digite el Valor..." id="buscar" name="buscar"/>
+                  <button className="button" id="botonBuscar">Buscar</button>
+                </div>
+                
+                
+                <div className="PosButtonN"></div>
         <div>
-          <table border="1px" id="transactionTable">
+          <table className="centrardiv" border="1px" id="transactionTable">
             <tr>
                 <th>
                 </th>
@@ -26,37 +33,38 @@ const MaestroProducto = () => {
                 <th>Estado</th>
             </tr>
             <tr>
-              <td><input type="checkbox"></input></td>
+              <td><input type="checkbox"  className="inputProd"></input></td>
               <td align="center">001</td>
               <td align="center">Tenis</td>
               <td align="center">12000</td>
               <td>
-                <select name="estado" id="estado">
+                <select className="inputProd" name="estado" id="estado">
                   <option value="Disponible">Disponible</option>
                   <option value="No disponible">No Disponible</option>
                 </select>
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox"></input></td>
+              <td><input type="checkbox" className="inputProd"></input></td>
               <td align="center">002</td>
               <td align="center">Zapatillas</td>
               <td align="center">25000</td>
               <td>
-                <select name="estado" id="estado">
+                <select className="inputProd" name="estado" id="estado">
                   <option value="Disponible">Disponible</option>
                   <option value="No disponible">No Disponible</option>
                 </select>
               </td>
             </tr>
           </table>
-          <button classname="button" id="botonActualizar">Actualizar</button>
-          <button classname="button" id="botonBuscar">Eliminar</button>
-          <Link to="registrarProducto"><button style="position: absolute;top: 50%;" className="button" >Nuevo Producto</button></Link>
+          <div className="PosButtonCrud"> 
+          <button className="button" id="botonActualizar">Actualizar</button>
+          <button className="button" id="botonBuscar">Eliminar</button>
+          </div>
         </div>
       </div> 
     </div>
-  
+     
   );
 }
 

@@ -4,20 +4,20 @@ const RegistrarProducto = () => {
         <div className="content">
             <div className="container mw-60 pd-tb-30">    
                 <h2>Administración de productos</h2>
-                <div className="PosButtonL"><Link to="maestroProducto"><button>Listar productos</button></Link></div>
+                <div className="PosButtonL"><Link to="maestroProducto"><button className="button">Listar productos</button></Link></div>
                 <form id="transactionForm">
                     <table border="1px">
                         <tr>
                             <td><label for ="ID">Código </label></td>
-                            <td><input type="text" placeholder="ID del producto" id="ID" name="ID"/></td>
+                            <td><input type="text" placeholder="ID del producto" id="ID" name="ID"required/></td>
                         </tr>
                         <tr>  
                             <td><label for ="descripcion">Descripción </label></td>
-                            <td><input type="text" placeholder="Descripcion del producto" id="descripcion" name="descripcion"/></td>
+                            <td><input type="text" placeholder="Descripcion del producto" id="descripcion" name="descripcion"required/></td>
                         </tr>
                         <tr>  
                             <td><label for ="valor_unitario">Valor Unitario </label></td>
-                            <td><input type="number" placeholder="Valor Unitario" id="valor_unitario" name="valor_unitario"/></td>
+                            <td><input type="number" placeholder="Valor Unitario" id="valor_unitario" name="valor_unitario"required/></td>
                         </tr>
                         <tr> 
                             <td><label for="estado">Estado </label></td>
@@ -33,7 +33,7 @@ const RegistrarProducto = () => {
                     
 
                 </form>
-                <button className="buttonR" id="botonDeEnvio">Registrar</button>
+                <button className="button" id="botonDeEnvio">Registrar</button>
                 <br></br><br></br>
 
                     <table border="1px" id="transactionTable">

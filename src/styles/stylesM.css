@@ -1,58 +1,39 @@
-
-  .buttonR{
-    border: 2px solid #212121;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: #212121;
-    color: white;
-    padding: 13px 24px;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 2;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-
-  }
   .PosButtonL{
-    border: 2px solid #212121;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: #b6b2b2;
-    color: white;
-    padding: 13px 24px;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 2;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-  }
-
+    justify-content: flex-end;
+   }
+   .PosButtonN{
+    display: flex;
+    justify-content: flex-end;
+   }
+   .PosButtonCrud{
+    display: flex;
+    justify-content: space-evenly;
+   }
+    .centrardiv{
+      margin:auto
+    }
+    .posBuscar{
+      display: flex;
+      /* flex-direction:row;   */
+      align-items: flex-start; 
+    }
   /*Acontinuación estan los estilos para todos los formularios de las páginas*/
 form{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-input, select{
+.inputProd{
+  
   color: #212121;
   border: 1px solid #212121;
   border-radius: 0;
   padding: 12px 6px;
-  min-height: 51px;
+  min-height: 5px;
   margin-bottom: 0px;
-  min-width: 30vw;
+  min-width: 5vw;
+  font-size: 20px;
 }
 label{
   min-width: 30vw;
