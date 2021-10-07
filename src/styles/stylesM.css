@@ -18,12 +18,7 @@
       /* flex-direction:row;   */
       align-items: flex-start; 
     }
-  /*Acontinuación estan los estilos para todos los formularios de las páginas*/
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .inputProd{
   
   color: #212121;
@@ -35,45 +30,12 @@ form{
   min-width: 5vw;
   font-size: 20px;
 }
-label{
-  min-width: 30vw;
+#transactionTable{
+  margin: 50px 0;
 }
-input:focus, select:focus{
-  color: #111;
-  outline: none;
-  -webkit-box-shadow: 0 0 0 1px;
-  box-shadow: 0 0 0 1px;
+.listar{
+  margin: 50px 0;
 }
-/* clase para etiqueta padre del form*/
-.flex-form{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.button{
+  text-align: center;
 }
-/*Estilos para label*/
-
-.label{
-  font-family: Inter,sans-serif; 
-  font-size: 16px;  
-}
-
-/*------------*/
-
-/*Estilos botones de página login*/
-
-.caja-botones{
-  display: flex;
-  flex-direction: column; 
-  min-width: 30vw; 
-}
-.button-gmail{
-  margin-bottom: 25px;
-}
-h2{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
