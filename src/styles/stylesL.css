@@ -11,10 +11,10 @@ form{
     padding: 12px 16px;
     min-height: 51px;
     margin-bottom: 20px;
-    max-width: 22vw;
+    min-width: 30vw;
   }
   label{
-    max-width: 22vw;
+    min-width: 30vw;
   }
   input:focus, select:focus{
     color: #111;
@@ -29,3 +29,28 @@ form{
     flex-direction: column;
     align-items: center;
   }
+  /*Estilos para label*/
+
+  .label{
+    font-family: Inter,sans-serif; 
+    font-size: 16px;  
+  }
+
+  /*------------*/
+
+  /*Estilos botones de página login*/
+
+  .caja-botones{
+    display: flex;
+    flex-direction: column; 
+    min-width: 30vw; 
+  }
+  .button-gmail{
+    margin-bottom: 25px;
+  }
+  .registro{
+    text-align: center;
+  }
+
+  
+  

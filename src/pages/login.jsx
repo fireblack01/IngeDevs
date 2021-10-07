@@ -5,7 +5,8 @@ const Login = () => {
   return(
     <div className="content">
       <div className="container mw-60 pd-tb-30">
-        <div>
+        <div className="flex-form">
+          <h2>Acceder</h2>
           <form>
               <label for="correo">Ingrese su correo: </label>
               <input type="email" name="correo" placeholder="example@sas.com" required />
@@ -13,11 +14,13 @@ const Login = () => {
               <label for="Contrasena">Ingrese su contrasena: </label>
               <input type="password" name="contraseña" placeholder="aksdj3211" required />
 
-              <input type="submit" value="Iniciar sesion" />
+              <input className="button"type="submit" value="Iniciar sesión" />
           </form>
-
-          <button type="submit">Ingresar por mi cuenta de gmail</button>
-          <Link to="/registro" className="registro">Quiero registrarme</Link>
+          <div className="caja-botones">
+            <button type="submit" className="button button-gmail">Ingresar por mi cuenta de gmail</button>
+            <Link to="/registro" className="registro" >Quiero registrarme</Link>
+          </div>
+          
         </div>
       </div>
     </div>
