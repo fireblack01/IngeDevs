@@ -5,8 +5,6 @@ const Registro = () => {
     <div className="content">
       <div className="container mw-60 pd-tb-30">
         <div>
-          <Link to="/" className="registro"> <img src="casa.png" title= "Volver a pagina de inicio "alt="Volver" width="45px"/></Link>
-          <img src="icono.ico" title= "Nuestro logo"alt="Logo zapaticos SAS" width="45px"/>
           <form>
               <label for="nombre">Ingrese su nombre: </label>
               <input type="text" name="nombre" placeholder="Pepito" required/>
