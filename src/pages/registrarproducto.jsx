@@ -4,7 +4,7 @@ const RegistrarProducto = () => {
         <div className="content">
             <div className="container mw-60 pd-tb-30">    
                 <h2>Administración de productos</h2>
-                <Link to="maestroProducto"><button className="button" >Listar productos</button></Link>
+                <div className="PosButtonL"><Link to="maestroProducto"><button>Listar productos</button></Link></div>
                 <form id="transactionForm">
                     <table border="1px">
                         <tr>
@@ -30,9 +30,10 @@ const RegistrarProducto = () => {
                         </tr> 
                     </table>
 
-                    <button className="buttonRegistar" id="botonDeEnvio">Registrar</button>
+                    
 
                 </form>
+                <button className="buttonR" id="botonDeEnvio">Registrar</button>
                 <br></br><br></br>
 
                     <table border="1px" id="transactionTable">
