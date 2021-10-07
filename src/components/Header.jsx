@@ -10,7 +10,7 @@ const Header = () => {
                       <nav className="nav">
                           <ul className="menu flex flex-wrap">
                               <li>
-                                <Link to="/">Productos</Link>
+                                <Link to="/maestroProducto">Productos</Link>
                               </li>
                               <li>
                                 <Link to="/">Ventas</Link>
