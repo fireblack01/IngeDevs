@@ -1,0 +1,7 @@
+.contenedor-logo{
+    display: flex;
+    flex-direction: center;
+}
+.imagen-logo{
+    width: 150px;
+}

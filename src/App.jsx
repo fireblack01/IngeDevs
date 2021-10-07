@@ -8,6 +8,7 @@ import RegistrarProducto from 'pages/registrarproducto';
 import RegistrarVenta from 'pages/registrarventa';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css';
+import 'styles/stylesL.css';
 
 
 function App() {
