@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 const ActualizarUsuario = () => {
   return(
     <div className="content">
-        <div className="container mw-60 pd-tb-30">
+        <div className="container mw-60 pd-tb-30 flex-form">
             <h2>Sistema de actualizacion de usuarios</h2>
             <form>
                 <label for="id">Escriba el ID del usuario a modificar o actualizar</label>
@@ -23,7 +24,7 @@ const ActualizarUsuario = () => {
                     <option value="no-autorizado" selected>No autorizado</option>
                     <option value="pendiente">Pendiente</option>
                 </select>
-                
+                <Link type="submit" className="button">Registrar</Link>
             </form>
         </div>
     </div>
