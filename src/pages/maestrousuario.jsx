@@ -4,14 +4,15 @@ import lupa from 'media/lupa.png';
 const MaestroUsuario = () => {
     return(
         <div className="content">
-            <div className="container mw-60 pd-tb-30">
-                <div>
-                    <label for="buscar">Bienvenido al buscador de usuarios por ID</label>
-                    <img src={lupa} title="Lupa de busqueda " alt="Lupa" width="50px"/>
-                    <input type="text" name="buscar" placeholder="Ingrese el id..." required />
-                    <Link to="actualizarusuario" class="actualizar">Actualizar usuario</Link>
+            <div className="container mw-60 pd-tb-30 flex flex-center flex-justify-center flex-column">
+                <div className="flex-form">
+                    <form action="" className="flex flex-center">
+                        <label for="buscar">Bienvenido al buscador de usuarios por ID</label>
+                        <input type="text" name="buscar" placeholder="Ingrese el id..." required />
+                        <Link to="#" type="submit" class="buscar"><img src={lupa} title="Lupa de busqueda " alt="Lupa" width="50px"/></Link>
+                    </form>
                 </div>
-                <div>
+                <div className="flex flex-center table-container">
                     <table>
                         <tr>
                             <td><b>ID</b></td>
@@ -51,6 +52,7 @@ const MaestroUsuario = () => {
                         </tr>
                     </table>
                 </div>
+                <Link to="actualizarusuario" class="actualizar button">Actualizar usuario</Link>
             </div>
         </div>
     );
