@@ -7,6 +7,7 @@ import MaestroUsuario from 'pages/maestrousuario';
 import RegistrarProducto from 'pages/registrarProducto';
 import MaestroProducto from 'pages/maestroProducto';
 import RegistrarVenta from 'pages/registrarventa';
+import MaestroVenta from 'pages/maestroventa';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css';
 import 'styles/stylesL.css';
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path='/registrarventa' exact>
               <RegistrarVenta />
+            </Route>
+            <Route path='/maestroventa' exact>
+              <MaestroVenta />
             </Route>
             <Route path='/' exact>
               <Content />
