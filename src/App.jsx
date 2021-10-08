@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css';
 import 'styles/stylesL.css';
 import 'styles/stylesM.css';
+import 'styles/stylesC.css';
 
 function App() {
   return (
