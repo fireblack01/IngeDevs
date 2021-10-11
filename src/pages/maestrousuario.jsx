@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import lupa from 'media/lupa.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MaestroUsuario = () => {
     return(
@@ -50,6 +52,19 @@ const MaestroUsuario = () => {
                             <td>Pendiente</td>
                         </tr>
                     </table>
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={5000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        />
+                        
+
                 </div>
             </div>
         </div>
