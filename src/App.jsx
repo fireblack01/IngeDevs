@@ -4,12 +4,15 @@ import Registro from 'pages/registro';
 import Login from 'pages/login';
 import ActualizarUsuario from 'pages/actualizarusuario';
 import MaestroUsuario from 'pages/maestrousuario';
-import RegistrarProducto from 'pages/registrarproducto';
+import RegistrarProducto from 'pages/registrarProducto';
+import MaestroProducto from 'pages/maestroProducto';
 import RegistrarVenta from 'pages/registrarventa';
+import MaestroVenta from 'pages/maestroventa';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'styles/styles.css';
 import 'styles/stylesL.css';
-
+import 'styles/stylesM.css';
+import 'styles/stylesC.css';
 
 function App() {
   return (
@@ -29,11 +32,17 @@ function App() {
             <Route path='/maestrousuario' exact>
               <MaestroUsuario />
             </Route>
-            <Route path='/registrarproducto' exact>
+            <Route path='/maestroProducto' exact>
+              <MaestroProducto />
+            </Route>
+            <Route path='/registrarProducto' exact>
               <RegistrarProducto />
             </Route>
             <Route path='/registrarventa' exact>
               <RegistrarVenta />
+            </Route>
+            <Route path='/maestroventa' exact>
+              <MaestroVenta />
             </Route>
             <Route path='/' exact>
               <Content />
