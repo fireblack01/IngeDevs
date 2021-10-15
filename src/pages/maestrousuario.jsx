@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import lupa from 'media/lupa.png';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const MaestroUsuario = () => {
     return(
@@ -15,7 +13,7 @@ const MaestroUsuario = () => {
                     </form>
                 </div>
                 <div className="flex flex-center table-container">
-                    <table>
+                    <table className="tabla">
                         <tr>
                             <td><b>ID</b></td>
                             <td><b>Nombre</b></td>
@@ -53,19 +51,6 @@ const MaestroUsuario = () => {
                             <td>Pendiente</td>
                         </tr>
                     </table>
-                    <ToastContainer
-                        position="top-right"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        />
-                        
-
                 </div>
                 <Link to="actualizarusuario" class="actualizar button">Actualizar usuario</Link>
             </div>

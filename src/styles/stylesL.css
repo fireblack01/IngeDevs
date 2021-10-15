@@ -51,6 +51,25 @@ form{
   .registro{
     text-align: center;
   }
+.tabla {
+  width: 100%;
+}
+.tabla td, .tabla td {
+  padding: 8px;
+  border: 1px solid white;
+}
 
+.tabla th {
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+/*
+.tabla tr:nth-child(even) {
+  background-color: grey;
+})
+*/
   
   

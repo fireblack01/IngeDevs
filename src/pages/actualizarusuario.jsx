@@ -2,18 +2,36 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
- 
+/*----GENERATE CODIGO DE INSOMNIA - DE POST----------*/
+const options = {
+    method: 'POST',
+    url: 'http://localhost:5000/usuarios/nuevos',
+    headers: {'Content-Type': 'application/json'},
+    data: {id: 1001, nombre: 'Laura', rol: 'Administrador', estado: 'Pendiente'}
+  };
+  
+  axios.request(options).then(function (response) {
+    console.log(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
+  /*---------------------------------------------------- */
 
 const ActualizarUsuario = () => {
  const [id, setID] = useState();
  const [nombre, setNombre] = useState();
  const [rol, setRol] = useState();
  const [estado, setEstado] = useState();
+ const enviarAlBackend = () => {
+     console.log("id", id, "nombre", nombre, "rol", rol, "estado", estado);
+     toast.success("Actualización de usuario completada");
+ }
 
-    useEffect = (() => {
+    /*useEffect = (() => {
      console.log("hola soy un use effect");
-    } ,[]);
+    } ,[]);*/
 
   return(
     <div className="content">
@@ -54,17 +72,7 @@ const ActualizarUsuario = () => {
                 <Link type="submit" className="button">Registrar</Link>
             </form>
 
-            <ToastContainer
-                        position="top-right"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        />
+            <ToastContainer position="top-right" autoClose={5000}/>
         </div>
     </div>
     );

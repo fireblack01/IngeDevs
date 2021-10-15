@@ -127,16 +127,10 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.flex-column{
-  flex-direction: column;
-}
 .flex-end {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-}
-.flex-justify-center{
-  justify-content: center;
 }
 .main-navigation {
   display: block;
@@ -176,8 +170,7 @@ img {
 }
 .site-branding {
   text-align: center;
-}
-.button{
+}.button{
   border: 2px solid #212121;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -188,8 +181,9 @@ img {
   display: inline-block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border-radius: 0;
   height: auto;
-  border-radius: 2;
+  border-radius: 0;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
@@ -207,16 +201,4 @@ img {
 }
 .mg-tb-10 {
   margin: 10px 0;
-}
-.text-center{
-  text-align: center;
-}
-.actualizar{
-  width: 230px;
-}
-.table-container{
-  margin: 50px 0 20px;
-}
-.table-container table td{
-  padding: 5px 10px;
 }
