@@ -13,10 +13,17 @@ import 'styles/styles.css';
 import 'styles/stylesL.css';
 import 'styles/stylesM.css';
 import 'styles/stylesC.css';
+import { Auth0Provider } from "@auth0/auth0-react";
+
 
 function App() {
   return (
-    <div className='App'>
+    <Auth0Provider 
+    domain="mintic3.us.auth0.com"
+    clientId="bb8Z69WTw9hMjiivAMIKZhCIKtCHJ7zQ"
+    redirectUri={window.location.origin}
+   >
+      <div className='App'>
       <Router>
         <Layout>
           <Switch>
@@ -51,6 +58,8 @@ function App() {
         </Layout>
       </Router>
     </div>
+    </Auth0Provider>
+    
   );
 }
 

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
+  const { loginWithRedirect } = useAuth0();
   return (
     <header className="site-header">
       <div className="container">
@@ -32,7 +34,9 @@ const Header = () => {
                       </div>
                   </div>
                   <div className="col-5 flex flex-center flex-end">
-                    <Link to="login" className="login button"> Inicio de sesión</Link>
+                  
+                    <button onClick={() => loginWithRedirect()} className ="login button">Inicio de sesión</button>
+
                   </div>
               </div>
           </div>
