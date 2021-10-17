@@ -1,3 +1,8 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -111,10 +116,6 @@ img {
 .pd-tb-30 {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.flex{
-  display: -ms-flexbox;
-  display: flex;
 }
 .flex-center {
   -webkit-box-align: center;
