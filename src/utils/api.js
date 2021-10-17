@@ -42,10 +42,7 @@ export const eliminarProducto = async (id, successCallback, errorCallback) => {
 export const obtenerUsuarios = async (successCallback, errorCallback) => {
   const options = {
     method: 'GET',
-    url: 'http://localhost:5050/usuarios',
-    headers: {
-      Authorization: getToken(),
-    },
+    url: 'http://localhost:5050/usuarios'
   };
   await axios.request(options).then(successCallback).catch(errorCallback);
 };
