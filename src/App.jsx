@@ -4,7 +4,7 @@ import Registro from 'pages/registro';
 import Login from 'pages/login';
 import ActualizarUsuario from 'pages/actualizarusuario';
 import MaestroUsuario from 'pages/maestrousuario';
-import RegistrarProducto from 'pages/registrarProducto';
+import RegistrarProducto from 'pages/registrarproducto';
 import MaestroProducto from 'pages/maestroProducto';
 import RegistrarVenta from 'pages/registrarventa';
 import MaestroVenta from 'pages/maestroventa';
