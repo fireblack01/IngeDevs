@@ -1,10 +1,10 @@
 import axios from 'axios';
-
+const Url = "https://peaceful-hamlet-66286.herokuapp.com"
 // CRUD de Productos
 export const obtenerProductos = async (successCallback, errorCallback) => {
   const options = {
     method: 'GET',
-    url: 'http://localhost:5050/productos/',
+    url: `${Url}/productos/`,
   };
   await axios.request(options).then(successCallback).catch(errorCallback);
 };
@@ -12,7 +12,7 @@ export const obtenerProductos = async (successCallback, errorCallback) => {
 export const crearProducto = async (data, successCallback, errorCallback) => {
   const options = {
     method: 'POST',
-    url: 'http://localhost:5050/productos/',
+    url: `${Url}/productos/`,
     headers: { 'Content-Type': 'application/json' },
     data,
   };
@@ -22,7 +22,7 @@ export const crearProducto = async (data, successCallback, errorCallback) => {
 export const editarProducto = async (id, data, successCallback, errorCallback) => {
   const options = {
     method: 'PATCH',
-    url: `http://localhost:5050/productos/${id}/`,
+    url: `${Url}/productos/${id}/`,
     headers: { 'Content-Type': 'application/json' },
     data,
   };
@@ -32,7 +32,7 @@ export const editarProducto = async (id, data, successCallback, errorCallback) =
 export const eliminarProducto = async (id, successCallback, errorCallback) => {
   const options = {
     method: 'DELETE',
-    url: `http://localhost:5050/productos/${id}/`,
+    url: `${Url}/productos/${id}/`,
     headers: { 'Content-Type': 'application/json' },
   };
   await axios.request(options).then(successCallback).catch(errorCallback);
@@ -42,7 +42,7 @@ export const eliminarProducto = async (id, successCallback, errorCallback) => {
 export const obtenerUsuarios = async (successCallback, errorCallback) => {
   const options = {
     method: 'GET',
-    url: 'http://localhost:5050/usuarios'
+    url: `${Url}/usuarios`
   };
   await axios.request(options).then(successCallback).catch(errorCallback);
 };
@@ -50,7 +50,7 @@ export const obtenerUsuarios = async (successCallback, errorCallback) => {
 export const editarUsuario = async (id, data, successCallback, errorCallback) => {
   const options = {
     method: 'PATCH',
-    url: `http://localhost:5050/usuarios/${id}/`,
+    url: `${Url}/usuarios/${id}/`,
     headers: { 'Content-Type': 'application/json' },
     data,
   };
@@ -62,7 +62,7 @@ export const editarUsuario = async (id, data, successCallback, errorCallback) =>
 export const crearVenta = async (data, successCallback, errorCallback) => {
   const options = {
     method: 'POST',
-    url: 'http://localhost:5050/ventas',
+    url: `${Url}/ventas`,
     headers: { 'Content-Type': 'application/json'},
     data,
   };
