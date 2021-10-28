@@ -56,3 +56,15 @@ export const editarUsuario = async (id, data, successCallback, errorCallback) =>
   };
   await axios.request(options).then(successCallback).catch(errorCallback);
 };
+
+// CRUD DE VENTAS
+
+export const crearVenta = async (data, successCallback, errorCallback) => {
+  const options = {
+    method: 'POST',
+    url: 'http://localhost:5050/ventas',
+    headers: { 'Content-Type': 'application/json'},
+    data,
+  };
+  await axios.request(options).then(successCallback).catch(errorCallback);
+};
