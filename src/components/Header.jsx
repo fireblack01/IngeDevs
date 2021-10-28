@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-
+import { useAuth0 } from "@auth0/auth0-react";
 const Header = () => {
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
   return (
     <header className="site-header">
       <div className="container">
@@ -10,16 +11,13 @@ const Header = () => {
                       <nav className="nav">
                           <ul className="menu flex flex-wrap">
                               <li>
-                                <Link to="/">Productos</Link>
+                                <Link to="/maestroProducto">Productos</Link>
                               </li>
                               <li>
-                                <Link to="/">Ventas</Link>
+                                <Link to="/maestroventa">Ventas</Link>
                               </li>
                               <li>
-                                <Link to="/actualizarusuario">Usuarios</Link>
-                              </li>
-                              <li>
-                                <Link to="/maestrousuario">Administrador de usuarios</Link>
+                                <Link to="/maestroUsuario">Administrador de usuarios</Link>
                               </li>
                           </ul>
                       </nav>
@@ -32,9 +30,15 @@ const Header = () => {
                       </div>
                   </div>
                   <div className="col-5 flex flex-center flex-end">
-                    <Link to="login" className="login button"> Inicio de sesión</Link>
+                  {isAuthenticated ? (
+                    <button onClick={() => logout({ returnTo: window.location.origin })} className="login button"> Cerrar sesión</button>
+                  ) : (
+                    <button onClick={() => loginWithRedirect()} className="login button"> Inicio de sesión</button>
+                  )}
                   </div>
+                  {console.log(isAuthenticated)}
               </div>
+              
           </div>
       </div>
     </header>
