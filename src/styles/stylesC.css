@@ -1,0 +1,148 @@
+/* === Selector universal === */
+*:focus {
+    outline: none;
+}
+
+/* === Tipografia formulario === */
+
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.sale_form{
+    justify-content: center;
+}
+
+
+.form_hint, .required_notification {
+    font-size: 14px;
+}
+
+/* === Lista de Estilos === */
+.sale_form ul {
+    width: 550px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sale_form li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.sale_form li:first-child, .sale_form li:last-child {
+    border-bottom: 1px solid #777;
+}
+
+/* === Header formulario === */
+.sale_form h2 {
+    margin: 0;
+    display: inline;
+}
+
+.required_notification {
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
+/* === Elementos formulario  === */
+.sale_form label {
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+
+.sale_form input {
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+.sale_form button {
+    margin-left: 156px;
+}
+
+/* Estilos visuales elementos formulario */
+.sale_form input  {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.sale_form input:focus {
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+}
+
+/* === Hints formulario === */
+.form_hint {
+    background: #ad3838;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    color: #ad3838;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.sale_form input:focus + .form_hint {
+    display: inline;
+}
+
+.sale_form input:required:valid + .form_hint {
+    background: #252440;
+}
+
+.sale_form input:required:valid + .form_hint::before {
+    color: #252440;
+}
+
+button.submit:hover {
+    opacity: .85;
+    cursor: pointer;
+}
+
+.centrado{
+display:flex;
+margin: 0 0 50px ;
+}
+.table-striped tbody tr:nth-of-type(odd){
+ background-color: rgb(237,245,245);
+ }
+.table-hover tbody tr:hover{
+ background-color: rgba(122,114,81, 0.7);
+ color: rgb(112,24,78);
+ }
+.thead-green{
+ background-color: rgb(0, 99, 71);
+ color: white;
+ }
+.h{
+display:flex;
+align-items: center;
+}
